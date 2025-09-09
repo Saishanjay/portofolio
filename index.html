@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shanjay Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Animate.css -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-dark text-light">
+
+  <!-- Header -->
+  <header class="text-center py-5">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Hi, I'm Shanjay 👋</h1>
+      <p class="lead mt-2">Frontend Developer | Designer | Learner</p>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="hidden">
+    <div class="container">
+      <h2 class="mb-3">About Me</h2>
+      <div class="row align-items-center g-4 mt-2">
+        <div class="col-md-4 d-flex justify-content-center">
+          <img src="WhatsApp Image 2025-02-24 at 22.57.13_2c396281.jpg" alt="My Photo" class="profile-img">
+        </div>
+        <div class="col-md-8">
+          <p class="fs-5">
+            I’m a passionate developer who loves creating clean, modern, and animated websites.
+            I enjoy working with HTML, CSS, JavaScript, and React.
+            Outside of coding, I love exploring new tech and solving real-world problems with code.
+          </p>
+          <div class="d-flex gap-3 mt-3">
+            <a class="btn btn-outline-light btn-lg px-3" href="https://github.com/Saishanjay" target="_blank">
+              <i class="fab fa-github me-2"></i>GitHub
+            </a>
+            <a class="btn btn-info btn-lg px-3" href="https://www.linkedin.com/in/sai-shanjay-787a422a2/" target="_blank">
+              <i class="fab fa-linkedin me-2"></i>LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="hidden">
+    <div class="container">
+      <h2>Technical Skills</h2>
+      <div class="skills-grid mt-3">
+        <div class="skill"><i class="fab fa-html5"></i><p>HTML</p></div>
+        <div class="skill"><i class="fab fa-css3-alt"></i><p>CSS</p></div>
+        <div class="skill"><i class="fab fa-js-square"></i><p>JavaScript</p></div>
+        <div class="skill"><i class="fab fa-react"></i><p>React</p></div>
+        <div class="skill"><i class="fab fa-node"></i><p>Node.js</p></div>
+        <div class="skill"><i class="fas fa-database"></i><p>MongoDB</p></div>
+        <div class="skill"><i class="fas fa-fire"></i><p>Firebase</p></div>
+        <div class="skill"><i class="fas fa-server"></i><p>Express</p></div>
+        <div class="skill"><i class="fab fa-java"></i><p>Java</p></div>
+        <div class="skill"><i class="fab fa-python"></i><p>Python</p></div>
+        <div class="skill"><i class="fas fa-database"></i><p>MySQL</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="hidden">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="row g-3 mt-3">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm bg-transparent border-0 project-card">
+            <div class="card-body">
+              <h3 class="card-title">🌐 Portfolio Website</h3>
+              <p class="card-text">A Portfolio Website is a personal website that showcases your work, skills, and achievements...</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm bg-transparent border-0 project-card">
+            <div class="card-body">
+              <h3 class="card-title">Welfare Schemes</h3>
+              <p class="card-text">The Welfare Scheme Project is a digital system designed to manage and deliver government benefits effectively...</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm bg-transparent border-0 project-card">
+            <div class="card-body">
+              <h3 class="card-title">🤖 AI Chatbot</h3>
+              <p class="card-text">An AI chatbot is a computer program designed to simulate human conversation using natural language processing...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="hidden">
+    <div class="container text-center">
+      <h2>Contact Me</h2>
+      <p class="mb-3">Let’s build something amazing together!</p>
+      <button class="btn btn-info btn-lg" onclick="alert('Thanks for reaching out!')">Say Hello</button>
+    </div>
+  </section>
+
+  <!-- Back to Top Button -->
+  <button id="toTopBtn" class="btn btn-info position-fixed" style="right:20px; bottom:20px; display:none; z-index:999;">
+    ↑ Top
+  </button>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  ></script>
+</body>
+</html>

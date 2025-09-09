@@ -1,0 +1,138 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-size: 1rem;
+  color: #e2e8f0;  /* light gray-blue for readability */
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+
+body {
+  background: #0f172a;
+  color: #f1f5f9;
+  line-height: 1.6;
+}
+
+/* Section Spacing */
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+  scroll-margin-top: 80px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #38bdf8;
+}
+
+/* Profile */
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 4px solid #38bdf8;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease-in-out;
+}
+.profile-img:hover { transform: scale(1.05); }
+
+/* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+  text-align: center;
+}
+.skill {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.4s, background 0.3s;
+}
+.skill i {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #38bdf8;
+}
+.skill:hover {
+  transform: translateY(-8px) scale(1.05);
+  background: #0ea5e9;
+}
+
+/* Projects */
+.project-card {
+  background: #1e293b;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+.project-card:hover { transform: translateY(-10px); }
+.project-card .card-title { color: #facc15; }
+
+/* Animations */
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-in-out;
+}
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-text p { text-align: center; }
+}
+
+.uniqueness-box {
+  background: #0ea5e9;
+  color: #0f172a;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.uniqueness-box h4 {
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.uniqueness-box:hover {
+  transform: translateY(-5px) scale(1.02);
+  background: #38bdf8;
+}
+
+.card-body {
+  background: #0ea5e9;
+  color: #0f172a;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.card-body h3 {
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  color: #fff;
+}
